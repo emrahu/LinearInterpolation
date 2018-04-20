@@ -54,6 +54,7 @@ class AddPointsViewController: NSViewController {
     }
     func addCurve(){
         print("adding curve")
+        
     }
 }
 

@@ -12,6 +12,8 @@ class AnchorPoint: NSView {
 
     var point: NSPoint!
     var clickGestureRecognizer: NSClickGestureRecognizer!
+    var initialLocation: NSPoint!
+    
     private var trackingArea: NSTrackingArea?
     
     private var currentContext: CGContext?
@@ -41,29 +43,24 @@ class AnchorPoint: NSView {
     override func mouseExited(with event: NSEvent) {
         self.layer?.backgroundColor = NSColor.red.cgColor
     }
-    var initialLocation: NSPoint!
+    
     override func mouseDown(with event: NSEvent) {
-        let windowFrame = self.window!.frame
         initialLocation = event.locationInWindow
-        
-        initialLocation.x -= windowFrame.origin.x
-        initialLocation.y -= windowFrame.origin.y
-        
     }
     
     override func mouseDragged(with event: NSEvent) {
-    
+        super.mouseDragged(with: event)
         let originalLocation = self.initialLocation
         let currentLocation = event.locationInWindow
-        print("Original Location: \(originalLocation)")
-        print("Current Location: \(currentLocation)")
-        print("")
+//        print("Original Location: \(originalLocation)")
+//        print("Current Location: \(currentLocation)")
+//        print("")
         var newLocation =  NSPoint.zero
         let screenFrame = NSScreen.main?.frame
         let windowFrame = self.frame
         
-        newLocation.x = currentLocation.x - initialLocation.x
-        newLocation.y = currentLocation.y - initialLocation.y
+        newLocation.x = currentLocation.x //- initialLocation.x
+        newLocation.y = currentLocation.y //- initialLocation.y
         
         self.setFrameOrigin(newLocation)
     }
@@ -98,20 +95,5 @@ class AnchorPoint: NSView {
         bezier.line(to: NSPoint(x: 50, y: 50))
         NSColor.darkGray.set()
         bezier.stroke()
-        
-        
-        let context = NSGraphicsContext.current
-        
-        
-//        if let context = UIGraphicsGetCurrentContext() {
-//            context.setStrokeColor(UIColor.blue.cgColor)
-//            context.setLineWidth(3)
-//            context.beginPath()
-//            context.move(to: CGPoint(x: 5.0, y: 5.0)) // This would be oldX, oldY
-//            context.addLine(to: CGPoint(x: 50.0, y: 50.0)) // This would be newX, newY
-//            context.strokePath()
-//        }
-        
     }
-    
 }

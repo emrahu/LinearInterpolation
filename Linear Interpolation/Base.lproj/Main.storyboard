@@ -711,14 +711,14 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="TiC-Iv-9MM" customClass="ViewContainer" customModule="Linear_Interpolation" customModuleProvider="target">
-                                <rect key="frame" x="10" y="10" width="430" height="280"/>
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                             </customView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="TiC-Iv-9MM" firstAttribute="top" secondItem="wZ7-Mq-0Ui" secondAttribute="top" constant="10" id="5SH-st-SU7"/>
-                            <constraint firstItem="TiC-Iv-9MM" firstAttribute="leading" secondItem="wZ7-Mq-0Ui" secondAttribute="leading" constant="10" id="MSf-jZ-vSA"/>
-                            <constraint firstAttribute="bottom" secondItem="TiC-Iv-9MM" secondAttribute="bottom" constant="10" id="OOQ-wg-egm"/>
-                            <constraint firstAttribute="trailing" secondItem="TiC-Iv-9MM" secondAttribute="trailing" constant="10" id="UGU-aN-YCu"/>
+                            <constraint firstItem="TiC-Iv-9MM" firstAttribute="top" secondItem="wZ7-Mq-0Ui" secondAttribute="top" id="5SH-st-SU7"/>
+                            <constraint firstItem="TiC-Iv-9MM" firstAttribute="leading" secondItem="wZ7-Mq-0Ui" secondAttribute="leading" id="MSf-jZ-vSA"/>
+                            <constraint firstAttribute="bottom" secondItem="TiC-Iv-9MM" secondAttribute="bottom" id="OOQ-wg-egm"/>
+                            <constraint firstAttribute="trailing" secondItem="TiC-Iv-9MM" secondAttribute="trailing" id="UGU-aN-YCu"/>
                         </constraints>
                     </view>
                     <connections>
