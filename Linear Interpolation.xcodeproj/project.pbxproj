@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C4813C3208A3A44004E8C8A /* ViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4813C2208A3A44004E8C8A /* ViewContainer.swift */; };
 		0C71EDD6201A2AFA008FA599 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C71EDD5201A2AFA008FA599 /* AppDelegate.swift */; };
 		0C71EDD8201A2AFA008FA599 /* AddPointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C71EDD7201A2AFA008FA599 /* AddPointsViewController.swift */; };
 		0C71EDDA201A2AFA008FA599 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C71EDD9201A2AFA008FA599 /* Assets.xcassets */; };
 		0C71EDDD201A2AFA008FA599 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C71EDDB201A2AFA008FA599 /* Main.storyboard */; };
 		0C71EDE6201A6B9C008FA599 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C71EDE5201A6B9C008FA599 /* Path.swift */; };
-		0C71EDE8201A6BC5008FA599 /* PathCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C71EDE7201A6BC5008FA599 /* PathCreator.swift */; };
-		0C71EDEA201A6BD3008FA599 /* PathEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C71EDE9201A6BD3008FA599 /* PathEditor.swift */; };
 		0CD2D0D8201E79E60087B424 /* AnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD2D0D7201E79E60087B424 /* AnchorPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C4813C2208A3A44004E8C8A /* ViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContainer.swift; sourceTree = "<group>"; };
 		0C71EDD2201A2AFA008FA599 /* Linear Interpolation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linear Interpolation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C71EDD5201A2AFA008FA599 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C71EDD7201A2AFA008FA599 /* AddPointsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPointsViewController.swift; sourceTree = "<group>"; };
@@ -26,8 +26,6 @@
 		0C71EDDE201A2AFA008FA599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C71EDDF201A2AFA008FA599 /* Linear_Interpolation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Linear_Interpolation.entitlements; sourceTree = "<group>"; };
 		0C71EDE5201A6B9C008FA599 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
-		0C71EDE7201A6BC5008FA599 /* PathCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathCreator.swift; sourceTree = "<group>"; };
-		0C71EDE9201A6BD3008FA599 /* PathEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathEditor.swift; sourceTree = "<group>"; };
 		0CD2D0D7201E79E60087B424 /* AnchorPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,13 +62,12 @@
 				0CD2D0D7201E79E60087B424 /* AnchorPoint.swift */,
 				0C71EDD5201A2AFA008FA599 /* AppDelegate.swift */,
 				0C71EDE5201A6B9C008FA599 /* Path.swift */,
-				0C71EDE7201A6BC5008FA599 /* PathCreator.swift */,
-				0C71EDE9201A6BD3008FA599 /* PathEditor.swift */,
 				0C71EDD7201A2AFA008FA599 /* AddPointsViewController.swift */,
 				0C71EDD9201A2AFA008FA599 /* Assets.xcassets */,
 				0C71EDDB201A2AFA008FA599 /* Main.storyboard */,
 				0C71EDDE201A2AFA008FA599 /* Info.plist */,
 				0C71EDDF201A2AFA008FA599 /* Linear_Interpolation.entitlements */,
+				0C4813C2208A3A44004E8C8A /* ViewContainer.swift */,
 			);
 			path = "Linear Interpolation";
 			sourceTree = "<group>";
@@ -147,10 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C71EDD8201A2AFA008FA599 /* AddPointsViewController.swift in Sources */,
+				0C4813C3208A3A44004E8C8A /* ViewContainer.swift in Sources */,
 				0CD2D0D8201E79E60087B424 /* AnchorPoint.swift in Sources */,
-				0C71EDE8201A6BC5008FA599 /* PathCreator.swift in Sources */,
 				0C71EDE6201A6B9C008FA599 /* Path.swift in Sources */,
-				0C71EDEA201A6BD3008FA599 /* PathEditor.swift in Sources */,
 				0C71EDD6201A2AFA008FA599 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -29,6 +29,9 @@ class AnchorPoint: NSView {
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
         clickGestureRecognizer = NSClickGestureRecognizer()
+        wantsLayer = true
+        layer?.cornerRadius = self.frame.size.height / 2
+        layer?.backgroundColor = NSColor.red.cgColor
     }
     
     override func mouseEntered(with event: NSEvent) {
